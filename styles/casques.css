@@ -1,0 +1,76 @@
+#casques{
+	display:block;
+}
+#casques article{
+	float:left;
+	width:157px;
+	height:275px;
+	margin:10px;
+	padding:5px;
+	border: white thin solid;
+}
+#casques article:hover{
+	border:#bbb thin solid;
+}
+#casques p{
+	margin:0px;
+}
+#casques .prix{
+	font-weight:bold;
+	color:red;
+}
+#casques .marque{
+	text-transform:uppercase;
+	text-align:left;
+	color:black;
+	font-family:'Fuse';
+	font-size:xx-large;
+}
+#casques .stockok{
+	float:right;
+	text-transform:uppercase;
+	padding:2px;
+	top:10px;
+	right:10px;
+	background-color:chartreuse;
+}
+#casques .stockko{
+	float:right;
+	text-transform:uppercase;
+	padding:2px;
+	top:10px;
+	right:10px;
+	background-color:red;
+}
+[data-tip]{
+	position:relative;
+	cursor:help;
+}
+[data-tip]:hover:after{
+	text-transform:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:20px;
+	left:10px;
+	white-space:nowrap;
+	padding: 5px 10px;
+	background:fuchsia;
+	color:#fff;
+}
+
+@media screen and (max-width:480px) {
+	#casques{
+		width: auto;
+		height: auto;
+	}
+	#casques article{
+		width:38%;
+		height: auto;
+		margin-bottom: 7%;
+	}
+
+	#casques p.marque{
+		font-size: 160%;
+	}
+
+}

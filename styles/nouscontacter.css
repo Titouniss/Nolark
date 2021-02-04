@@ -1,0 +1,109 @@
+/*formulaire */
+#coordo{
+    width: 50%;
+    height: 82%;
+}
+#infos{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+
+#motif{
+    width: 300px;
+    height: 85%;
+}
+
+#marques{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#colonne{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#choix{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autre{
+    height: 400px;
+    text-align: left;
+    margin-top: 10px ;
+}
+
+form{
+    display: flex;
+    width: 100%;
+}
+
+input[type="email"]:valid{
+    color : green;
+}
+input[type="email"]:invalid{
+    color : red;
+}
+
+@media screen and (max-width:480px){
+    form{
+        width: 98%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #coordo{
+        width: 40%;
+        height: auto;
+    }
+    #infos{
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+
+    .nom , .prenom , .mail , .url , .statut , .date{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    .choix_date{
+        display: flex;
+        width: 70%;
+    }
+
+    #marques{
+        width: 93%;
+    }
+
+    #partie_2{
+        margin-bottom: 5%;
+    }
+    #motif{
+        width: 46.5%;
+        height: auto;
+    }
+
+    .autre{
+        height: auto;
+    }
+
+    input[type="submit"]{
+        margin-top: 0%;
+        margin-left: 0.3%;
+        float: left;
+    }
+
+}
